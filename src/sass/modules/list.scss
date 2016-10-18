@@ -1,0 +1,43 @@
+$list-padding: 2vw;
+
+.list {
+	&__item {
+		cursor: pointer;
+		background: $light;
+		color: $light;
+		margin-bottom: 1px;
+		padding: $list-padding;
+		position: relative;
+		display: block;
+	}
+	&__thumb {
+		display: inline-block;
+		margin-right: 1vw;
+	}
+	&__details {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__title {
+		font-size: 1em;
+	}
+
+	&__detail {
+		margin: 3vw 0 0vw 0;
+	}
+
+	&__notification {
+		background: $primary;
+		color: $light;
+		bottom: 50%;
+		display: block;
+		font-size: 0.8em;
+		line-height: 0;
+		position: absolute;
+		padding: 1vw;
+		right: $list-padding;
+		top: 35%;
+		vertical-align: top;
+
+	}
+}

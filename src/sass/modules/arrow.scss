@@ -1,0 +1,36 @@
+.arrow {
+	&:after {
+		z-index: 1;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		transition: all .5s ease out;
+	}
+
+	&--left:after {
+		left: 100%;
+		top: 50%;
+		border-left-color: inherit;
+		border-width: 1vw;
+		margin-top: -1vw;
+	}
+
+	&--left:before {
+		left: 100%;
+		top: 50%;
+		border-color: inherit;
+		border-width: 1vw;
+		margin-top: -1vw;
+	}
+
+	&--bottom:after {
+		top: 100%;
+		left: 50%;
+		border-top-color: inherit;
+		border-width: 1vw;
+		margin-left: -1vw;
+	}
+}

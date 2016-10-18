@@ -1,0 +1,84 @@
+.field {
+	position: relative;
+
+	&[fi-editable="true"] {
+		cursor: pointer;
+	}
+
+	&__value {
+		font-size: 1em;
+		line-height: 1.6em;
+		margin-bottom: 5vw;
+		padding: 1vw 0;
+		line-height: 2em;
+		position: relative;
+
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	&__label {
+		border-bottom: 1px solid $light--dark;
+		display: block;
+		font-weight: bold;
+		padding-bottom: 0.6vw;
+		width: 100%;
+	}
+
+	&__value--edit {
+		background: $light;
+		&::before {
+			content: '';
+			width: 2vw;
+			display: block;
+			height: 100%;
+			background: $light;
+			color: $light;
+			position: absolute;
+			left: -2vw;
+			top: 0;
+		}
+		&::after {
+			content: '';
+			width: 2vw;
+			height: 100%;
+			background: $light;
+			color: $light;
+			position: absolute;
+			right: -2vw;
+			top: 0;
+		}
+	}
+
+	&--textarea {
+
+		.field__value {
+			height: auto;
+			padding: 2vw 0;
+
+			&--edit {
+				&::before {
+					content: '';
+					width: 2vw;
+					display: block;
+					height: 100%;
+					background: $light;
+					color: $light;
+					position: absolute;
+					left: -2vw;
+				}
+				&::after {
+					content: '';
+					width: 2vw;
+					height: 100%;
+					background: $light;
+					color: $light;
+					position: absolute;
+					right: -2vw;
+					top: 0;
+				}
+			}
+		}
+	}
+}

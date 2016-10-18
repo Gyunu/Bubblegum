@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,300);$font: 'Open Sans', sans-serif;
+
+* {
+	font-family: $font;
+	font-weight: normal;
+	color: $font-colour;
+}
+
+h1{
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.8rem;
+}
+
+h6 {
+	font-size: 0.5rem;
+}
+
+p {
+
+}
+
+em {
+
+}

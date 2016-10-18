@@ -1,0 +1,13 @@
+.entry {
+
+	.entry__content {
+		background: $light;
+		padding: 2vw;
+	}
+
+	&--edit {
+		.entry__content {
+			background: $light--dark;
+		}
+	}
+}

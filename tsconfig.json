@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "outDir": "src/js"
+  },
+  "filesGlob": [
+    "./src/ts/**/*.ts",
+    "!node_modules/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "./src/ts/bubblegum/app/index.ts",
+    "./src/ts/bubblegum/interfaces/IAction.ts",
+    "./src/ts/bubblegum/interfaces/ITextInput.ts",
+    "./src/ts/bubblegum/modules/button.ts",
+    "./src/ts/bubblegum/modules/editablefield.ts",
+    "./src/ts/bubblegum/modules/list.ts",
+    "./src/ts/bubblegum/modules/listitem.ts",
+    "./src/ts/bubblegum/modules/search.ts",
+    "./src/ts/bubblegum/modules/textinput.ts",
+    "./src/ts/bubblegum/routes/index.ts",
+    "./src/ts/bubblegum/routes/sections.ts",
+    "./src/ts/index.ts"
+  ]
+}

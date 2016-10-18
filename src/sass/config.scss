@@ -1,0 +1,39 @@
+//Set the column count
+$columns:		10;
+
+//Set the grid classnames
+$class-desktop:		d;
+$class-tablet:		t;
+$class-phone:			p;
+
+//Set the media queries
+$media-desktop: "only screen and (max-width: 1040px)";
+$media-tablet: "only screen and (max-width: 768px)";
+$media-phone: "only screen and (max-width: 460px)";
+
+//Set the colours
+$light: #fff;
+$light--dark: darken($light, 5%);
+$light--darker: darken($light, 10%);
+$light--darkest: darken($light, 15%);
+$dark: #000;
+$primary: #e76ea1;
+$secondary: #9c6e86;
+$tertiary: ;
+$active: #fCa79a;
+$disable: ;
+$positive: #cce6C5;
+$negative: #f08f95;
+$nuetral: #e1e2e4;
+$font-colour: #9b9b9b;
+
+
+$gutter: 1vw;
+
+$baseFontSize: 1vw;
+$baseElementHeight: 3vw;
+
+html,body {
+	font-size: $baseFontSize;
+	overflow-y: hidden;
+}

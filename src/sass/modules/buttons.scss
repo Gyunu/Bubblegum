@@ -1,0 +1,42 @@
+.button {
+	width: $baseElementHeight;
+	height: $baseElementHeight;
+	position: relative;
+	background: $light;
+	transition: all .2s ease-out;
+	cursor: pointer;
+
+	//nested icon
+	.fa {
+		color: $light;
+		font-weight: lighter;
+		display: inline-block;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 3vw;
+		font-size: 1vw;
+	}
+
+	&--large {
+		width: $baseElementHeight * 2;
+		height: $baseElementHeight *2;
+	}
+	&--nuetral {
+		background: $nuetral;
+		color: $nuetral;
+	}
+	&--positive {
+		background: $positive;
+		color: $positive;
+	}
+	&--negative {
+		background: $negative;
+		color: $negative;
+	}
+	&--active {
+		background: $active;
+		color: $active;
+	}
+}

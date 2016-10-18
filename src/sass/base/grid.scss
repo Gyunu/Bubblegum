@@ -1,0 +1,78 @@
+//Desktop
+@for $i from 1 through $columns {
+	$width: percentage((1 - ((1 / $columns) * $i)) + (1 / $columns));
+	.#{$class-desktop}-#{$columns - $i + 1} {
+		display: inline-block;
+		padding: 0 $gutter;
+		width: $width;
+		vertical-align: top;
+		&:before,
+		&:after {
+			content: '';
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+
+}
+
+//Tablet
+@media #{$media-tablet} {
+	@for $i from 1 through $columns {
+		$width: percentage((1 - ((1 / $columns) * $i)) + (1 / $columns));
+		.#{$class-tablet}-#{$columns - $i + 1} {
+			display: inline-block;
+			padding: 0 $gutter;
+			width: $width;
+			vertical-align: top;
+			&:before,
+			&:after {
+				content: '';
+				display: table;
+			}
+			&:after {
+				clear: both;
+			}
+		}
+	}
+}
+
+//Phone
+@media #{$media-phone} {
+	@for $i from 1 through $columns {
+		$width: percentage((1 - ((1 / $columns) * $i)) + (1 / $columns));
+		.#{$class-phone}-#{$columns - $i + 1} {
+			display: inline-block;
+			padding: 0 $gutter;
+			width: $width;
+			vertical-align: top;
+			&:before,
+			&:after {
+				content: '';
+				display: table;
+			}
+			&:after {
+				clear: both;
+			}
+		}
+	}
+}
+
+.no-gutter {
+	padding: 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}

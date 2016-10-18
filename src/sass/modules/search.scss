@@ -1,0 +1,15 @@
+.search {
+
+	&__input {
+		transition: all .25s ease-in;
+		opacity: 1;
+		&--hidden {
+			width: 0;
+			opacity: 0;
+			padding: 0;
+		}
+	}
+
+
+
+}

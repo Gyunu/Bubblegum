@@ -1,0 +1,24 @@
+{
+	"name": "boilerplate",
+	"version": "1.0.0",
+	"description": "A basic typescript, webpack and sass boilerplate.",
+	"main": "index.js",
+	"scripts": {
+		"preinstall": "mkdir dist; mkdir dist/js; mkdir dist/css; mkdir src; mkdir src/js; mkdir src/sass; mkdir src/fonts; touch src/ts/index.ts; touch src/sass/index.scss; touch src/sass/config.scss; touch dist/index.html;",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "rm -rf src/js; echo \"\n\nRunning Sass\n\n\"; node-sass --output-style --source-map-root --source-map dist/css/min.bubblegum.map src/sass/index.scss dist/css/min.bubblegum.css; echo \"\n\nRunning tslint\n\n\"; tslint -indent tabs src/ts/**/*.ts; echo \"\n\nRunning Webpack\n\n\"; webpack --config webpack.build.js; echo \"\n\nCopying Fonts\n\n\"; cp -r src/fonts dist/fonts; ",
+		"deploy": "rm -rf src/js; echo -e \n\nRemoving source maps\n\n'; rm dist/css/*.map && rm dist/js/*.map; echo -e \n\nRunning Sass\n\n';  node-sass src/sass/index.scss dist/css/min.bubblegum.css; echo -e \n\nRunning tslint\n\n'; tslint -indent tabs src/ts/**/*.ts; echo -e \n\nRunning Webpack\n\n'; webpack --config webpack.deploy.js echo \"\n\nCopying Fonts\n\n\"; cp -r src/fonts dist/fonts;"
+	},
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+	},
+	"dependencies": {
+		"html-loader": "^0.4.3",
+		"ts-loader": "^0.8.2",
+		"typescript": "^1.8.10",
+		"node-sass": "^3.5.3",
+		"webpack": "^1.13.0",
+		"sidewalk": "0.0.0"
+	}
+}

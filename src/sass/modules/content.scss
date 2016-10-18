@@ -1,0 +1,21 @@
+.content {
+	background: $secondary;
+	display: block;
+	font-size: 0;
+
+	&__pane {
+		height: 95vh;
+		overflow-y: scroll;
+		font-size: $baseFontSize;
+		padding-top: 1vw;
+
+		&:nth-child(2) {
+			background-color: $light--darker;
+		}
+
+		&:nth-child(3) {
+			background-color: $light--darkest;
+		}
+	}
+
+}

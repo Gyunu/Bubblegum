@@ -1,0 +1,17 @@
+.action {
+	height: $baseElementHeight;
+	background: $secondary;
+	display: block;
+	font-size: 0;
+	position: relative;
+	* {
+		height: $baseElementHeight;
+	}
+	&__pane {
+
+	}
+
+	&__button {
+
+	}
+}

@@ -1,0 +1,42 @@
+.input {
+
+	&__text {
+		border: none;
+		outline: none;
+		color: $font-colour;
+		font-size: 1vw;
+		padding-left: 2vw;
+
+		&--active {
+			border: 2px dotted $active;
+			border-left: 0;
+
+			&:focus {
+				border: 2px solid $positive;
+				border-left: 0;
+			}
+		}
+
+		&--changed {
+				border: 2px dotted $positive;
+				border-left: 0;
+		}
+	}
+}
+
+::-webkit-input-placeholder {
+   color: $light--darkest;
+	 font-weight: 300;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: $light--darkest;
+	 font-weight: 300;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $light--darkest;
+	 font-weight: 300;
+}
+:-ms-input-placeholder {
+   color: $light--darkest;
+	 font-weight: 300;
+}
